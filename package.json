@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@kinde-oss/kinde-auth-pkce-js": "^0.0.6"
+  }
+}
