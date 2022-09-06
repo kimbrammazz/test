@@ -1,28 +1,27 @@
 console.log(window.location.origin);
 
 const kinde = await createKindeClient({
-    domain: 'https://test.localkinde.me',
-    redirect_uri: window.location.origin
+  domain: "https://choice.kinde.com",
+  redirect_uri: window.location.origin,
 });
 
-document.getElementById('login').addEventListener('click', async () => {
-    console.log("pressed login button");
+document.getElementById("login").addEventListener("click", async () => {
+  console.log("pressed login button");
   await kinde.login();
 });
 
-document.getElementById('register').addEventListener('click', async () => {
+document.getElementById("register").addEventListener("click", async () => {
   await kinde.register();
 });
 
-
-window.addEventListener('load', async () => {
+window.addEventListener("load", async () => {
   await kinde.handleRedirectCallback();
   const user = await kinde.getUser();
-  console.log({user});
+  console.log({ user });
 });
 
-document.getElementById('logout').addEventListener('click', async () => {
-    await kinde.logout();
+document.getElementById("logout").addEventListener("click", async () => {
+  await kinde.logout();
 });
 
 // (async () => {

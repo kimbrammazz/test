@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="./css/app.css"> -->
-        <title>Document</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/app.css"> -->
+    <title>Document</title>
+  </head>
 
-    <body>
-        <div id="container">
-          <div id="logged_out_view">
-            <button id="login" type="button">Login</button>
-            <button id="register" type="button">Registration</button>
-            <button id="logout" type="button">Log out</button>
-          </div>
+  <body>
+    <div id="container">
+      <div id="logged_out_view">
+        <button
+          id="login"
+          type="button"
+          onclick="location.href = 'calender.html';"
+        >
+          Login
+        </button>
+        <button id="register" type="button">Registration</button>
+        <button id="logout" type="button">Log out</button>
+      </div>
 
-          <div>
-            <p>Welcome to test</p>
-          </div>
-      
-        </div>    
+      <div>
+        <p>Welcome to test</p>
+      </div>
+    </div>
 
-        <script src="node_modules/@kinde-oss/kinde-auth-pkce-js/dist/kinde-auth-pkce-js.umd.min.js"></script>
-        <script type="module" src="./js/kinde.js"></script>
-        <!-- <script src="./js/index.js"></script> -->
-        
-      </body>
-      
+    <script src="node_modules/@kinde-oss/kinde-auth-pkce-js/dist/kinde-auth-pkce-js.umd.min.js"></script>
+    <script type="module" src="./js/kinde.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+  </body>
 </html>
